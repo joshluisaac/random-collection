@@ -7,54 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-class Serialized {}
-
-class MappedField {
-  public String getNameToStore() {
-    return "";
-  }
-
-  public boolean isMap() {
-    return true;
-  }
-
-  public boolean isReference() {
-    return true;
-  }
-
-  public boolean hasAnnotation(Class<Serialized> serializedClass) {
-    return true;
-  }
-
-  public boolean isSingleValue() {
-    return true;
-  }
-
-  public Class getType() {
-    return MappedField.class;
-  }
-
-  public Class getSubClass() {
-    return MappedField.class;
-  }
-}
-
-class MappedClass {
-
-  public Optional<MappedField> getMappedField(String fieldName) {
-    return Optional.of(new MappedField());
-  }
-
-  public Optional<MappedField> getMappedFieldByJavaField(String fieldName) {
-    return Optional.of(new MappedField());
-  }
-
-  public boolean isInterface() {
-    return true;
-  }
-}
-
-public class IfElseRefactoring {
+public class Unrefactored {
 
   static ValidatedField validateQuery(
       final Class clazz,

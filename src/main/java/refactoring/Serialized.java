@@ -1,0 +1,4 @@
+package refactoring;
+
+class Serialized {
+}
