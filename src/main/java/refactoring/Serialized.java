@@ -1,4 +1,3 @@
 package refactoring;
 
-class Serialized {
-}
+class Serialized {}
