@@ -10,11 +10,11 @@ class MappedField {
   }
 
   public boolean isReference() {
-    return true;
+    return false;
   }
 
   public boolean hasAnnotation(Class<Serialized> serializedClass) {
-    return true;
+    return false;
   }
 
   public boolean isSingleValue() {

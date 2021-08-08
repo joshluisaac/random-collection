@@ -12,4 +12,15 @@ class ValidatedField {
   public ValidatedField(String propertyPath) {
     this.propertyPath = propertyPath;
   }
+
+
+    @Override
+    public String toString() {
+        return "ValidatedField{" +
+                "propertyPath='" + propertyPath + '\'' +
+                ", mappedField=" + mappedField +
+                ", databasePath='" + databasePath + '\'' +
+                ", mappedClass=" + mappedClass +
+                '}';
+    }
 }
