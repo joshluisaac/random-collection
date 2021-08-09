@@ -1,6 +1,7 @@
 package refactoring;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,6 +30,8 @@ public class TrishaGeeOriginal {
 
       for (int i = 0; ; ) {
         final String fieldName = pathElements[i];
+          System.out.println(Arrays.toString(pathElements));
+          System.out.println(fieldName);
         final boolean fieldIsArrayOperator = fieldName.equals("$");
 
         Optional<MappedField> mf = validatedField.mappedClass.getMappedField(fieldName);
