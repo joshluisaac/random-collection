@@ -6,7 +6,7 @@ class MappedField {
   }
 
   public boolean isMap() {
-    return true;
+    return false;
   }
 
   public boolean isReference() {

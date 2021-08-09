@@ -7,6 +7,9 @@ import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+import static refactoring.Utils.cannotQueryPastFieldException;
+import static refactoring.Utils.fieldNotFoundException;
+
 
 public class Refactored {
 
@@ -72,18 +75,5 @@ public class Refactored {
         return Pair.with(mappedField -> mappedField.hasAnnotation(Serialized.class), mappedField ->  cannotQueryPastFieldException(propertyPath, "_fieldName_", validatedField));
     }
 
-    private static RuntimeException fieldNotFoundException(
-            String propertyPath, ValidatedField validatedField) {
-        throw new IllegalArgumentException();
-    }
 
-    private static RuntimeException cannotQueryPastFieldException(
-            String propertyPath, String fieldName, ValidatedField validatedField) {
-        throw new IllegalArgumentException();
-    }
-
-    private static RuntimeException fieldNotFoundException(
-            String propertyPath, String fieldName, MappedClass mappedClass) {
-        throw new IllegalArgumentException();
-    }
 }
