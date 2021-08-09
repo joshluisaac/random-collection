@@ -8,8 +8,6 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 
-class FakeType {}
-
 public class Refactored {
 
     static ValidatedField validateQuery(
